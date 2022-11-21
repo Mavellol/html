@@ -1,0 +1,152 @@
+.foreword {
+  background-color: #F8F9FA;
+  @include media-breakpoint-up(xs) {
+    padding: 24px 0;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 48px 0;
+  }
+}
+
+.foreword__appeal {
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+}
+
+.foreword-text {
+  text-align: left;
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+}
+
+.reg-data {
+  display: flex;
+}
+
+.reg-data__prop {
+  max-width: 150px;
+  width: 30%;
+}
+
+.prices {
+  @include media-breakpoint-up(xs) {
+    padding: 24px 0;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 48px 0;
+  }
+}
+
+.prices__remark {
+  @include media-breakpoint-up(xs) {
+    text-align: left;
+  }
+  @include media-breakpoint-up(sm) {
+    text-align: center;
+  }
+}
+
+.prices__h2 {
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+.prices__table {
+  margin-top: 32px;
+}
+
+.gallery {
+  background: #F8F9FA;
+  @include media-breakpoint-up(xs) {
+    padding-top: 24px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 45px;
+  }
+}
+
+.gallery__h2 {
+  @include media-breakpoint-up(xs) {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 16px;
+  }
+  @include media-breakpoint-up(sm) {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.swiper__slide {
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  @include media-breakpoint-up(xs) {
+    margin-bottom: 16px;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 24px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 48px;
+  }
+  & .swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    border-radius: unset;
+    background-color: #E6B37A;
+  }
+  & .swiper-pagination-bullet-active {
+    background-color: #FF8A00;
+  }
+}
+
+.speakers {
+  @include media-breakpoint-up(xs) {
+    padding: 24px 0;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 48px 0;
+  }
+}
+
+.h2__speakers-xs {
+  @include media-breakpoint-up(xs) {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+  }
+  @include media-breakpoint-up(sm) {
+    text-align: center;
+    padding-left: 0;
+  }
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.h2__speakers-md {
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+.speakers__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  gap: 32px;
+  margin: 32px auto 0;
+}

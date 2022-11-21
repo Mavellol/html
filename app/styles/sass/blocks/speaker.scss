@@ -1,0 +1,25 @@
+.speaker {
+  width: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.speaker__name {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.speaker__desc {
+  font-style: italic;
+  text-align: center;
+}

@@ -1,0 +1,89 @@
+.logo {
+  width: 142px;
+  height: 142px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #17A2B8;
+  @include media-breakpoint-up(xs) {
+    padding-bottom: 44px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 240px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-bottom: 129px;
+  }
+}
+
+.burger {
+  width: 25px;
+  height: 14px;
+  transform: translateY(15px);
+  cursor: pointer;
+  @include media-breakpoint-up(xs) {
+    display: block;
+  }
+  @media (min-width: 510px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-breakpoint-up(xs) {
+    display: none;
+  }
+  @media (min-width: 510px) {
+    display: flex;
+  }
+}
+
+.menu__header {
+  padding-top: 45px;
+}
+
+.menu__item {
+  list-style-type: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo__header {
+  margin-bottom: 48px;
+  @include media-breakpoint-up(xs) {
+    margin-top: 48px;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-top: 253px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 133px;
+  }
+}
+
+.h1_header {
+  color: #FFFFFF;
+}
+
+.h3_header {
+  color: #FFFFFF;
+}
+
+.h3__data {
+  margin-top: 32px;
+}
+
+.h3__place {
+  margin-top: 24px;
+}
+
+.button__header {
+  margin: 48px auto 0;
+}

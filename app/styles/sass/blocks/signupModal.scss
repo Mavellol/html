@@ -1,0 +1,44 @@
+.modal__dialog {
+  max-width: 404px;
+  padding: 32px 32px 34px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal__cancellation {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.modal__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  color: #9FA3AB;
+}
+
+.modal__form {
+  margin-top: 24px;
+}
+
+.modal__input + .modal__input {
+  margin-top: 16px;
+}
+
+.button_modal {
+  font-weight: 400;
+  padding: 8px 14px;
+}
+
+.button__modal {
+  margin: 24px auto 0;
+}

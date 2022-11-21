@@ -1,0 +1,120 @@
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="wrapper">
+    <div class="content">
+        <header class="header">
+            <div class="container-xl">
+                <img class="burger" src="images/dist/burger.svg" alt="burger">
+                <ul class="menu menu__header">
+                    <li class="menu__item"><a class="menu__link" href="#">О мероприятии</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Регистрация</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Стоимость участия</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Спикеры</a></li>
+                </ul>
+                <div class="logo logo__header">
+                    <img src="images/dist/logo.png" alt="logo">
+                </div>
+                <h1 class="h1 h1_header">НАЗВАНИЕ МЕРОПРИЯТИЯ</h1>
+                <h3 class="h3 h3_header h3__data">4 МАЯ 2049</h3>
+                <h3 class="h3 h3_header h3__place">в самом сердце страны</h3>
+                <button class="button button__header" data-modal-open="signup">Регистрация</button>
+                <!--#include virtual="/parts/signupModal.html" -->
+            </div>
+        </header>
+
+        <div class="foreword">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-6 foreword__appeal">
+                        <p class="foreword-text">Дорогие друзья!</p>
+                        <p class="foreword-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="foreword-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="h2">Регистрация</h2>
+                        <p>Пожалуйста, проверьте правильность введенных данных:</p>
+                        <div class="reg-data">
+                            <div class="reg-data__prop">ФИО:</div>
+                            <div>Иванов Иван Иванович</div>
+                        </div>
+                        <div class="reg-data">
+                            <div class="reg-data__prop">Место работы:</div>
+                            <div>DIRECTUM</div>
+                        </div>
+                        <div class="reg-data">
+                            <div class="reg-data__prop">E-mail:</div>
+                            <div>ivanov_ii@directum.ru</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="prices">
+            <div class="container-xl">
+                <h2 class="h2 prices__h2">Стоимость участия</h2>
+                <div class="prices__remark">(на 1 человека)</div>
+                <table class="table prices__table">
+                    <tr class="tr">
+                        <th class="th"></th>
+                        <th class="th">Стоимость ДО 1 января</th>
+                        <th class="th">Стоимость ПОСЛЕ 1 января</th>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">С проживанием в 2-местном номере</td>
+                        <td class="td">30 000 ₽</td>
+                        <td class="td">35 000 ₽</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">Доплата за 1-местное проживание</td>
+                        <td class="td">500 ₽</td>
+                        <td class="td">1 500 ₽</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <h2 class="h2 gallery__h2">Галерея</h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper__slide" src="images/dist/swiper_image1.jpg" alt="swiper_image1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__slide" src="images/dist/swiper_image2.jpg" alt="swiper_image2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__slide" src="images/dist/swiper_image3.jpg" alt="swiper_image3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="speakers">
+            <h2 class="h2 h2__speakers-xs">Готовятся к общению</h2>
+            <h2 class="h2 h2__speakers-md">Наши спикеры</h2>
+
+            <div class="container-xl">
+                <div class="speakers__list">
+                    <!--#include virtual="/parts/speaker.html" -->
+                    <!--#include virtual="/parts/speaker.html" -->
+                    <!--#include virtual="/parts/speaker.html" -->
+                    <!--#include virtual="/parts/speaker.html" -->
+                    <!--#include virtual="/parts/speaker.html" -->
+                    <!--#include virtual="/parts/speaker.html" -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img class="logo2" src="images/dist/logo2.png" alt="logo">
+        <div class="copyright">&copy; DIRECTUM, 2019</div>
+    </footer>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
